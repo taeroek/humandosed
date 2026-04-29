@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – HumanDosed</title>
+  <meta name="description" content="Privacy Policy for HumanDosed." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧬</text></svg>" />
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://taeroek.github.io/humandosed/privacy.html" />
+  <meta property="og:title"       content="Privacy Policy – HumanDosed" />
+  <meta property="og:description" content="Privacy Policy for HumanDosed, a science-based longevity content brand." />
+  <meta name="twitter:card"       content="summary" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --teal: #00e5a0;
+      --bg: #050b12;
+      --surface: rgba(255,255,255,0.04);
+      --border: rgba(255,255,255,0.08);
+      --text: #e8edf5;
+      --muted: #6b7a96;
+    }
+
+    body {
+      font-family: "Inter", -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(120px);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.12;
+    }
+    .orb-1 { width: 500px; height: 500px; background: #00e5a0; top: -150px; right: -100px; }
+    .orb-2 { width: 400px; height: 400px; background: #4f46e5; bottom: 10%; left: -100px; }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 48px;
+      background: rgba(5,11,18,0.7);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    .logo {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -0.5px;
+      text-decoration: none;
+    }
+    .logo span { color: var(--teal); }
+    .nav-links { display: flex; gap: 36px; list-style: none; }
+    .nav-links a { color: var(--muted); font-size: 0.9rem; font-weight: 500; text-decoration: none; transition: color .2s; }
+    .nav-links a:hover { color: #fff; }
+    .nav-cta {
+      background: var(--teal);
+      color: #050b12;
+      font-size: 0.875rem;
+      font-weight: 700;
+      padding: 9px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: opacity .2s;
+    }
+    .nav-cta:hover { opacity: 0.85; }
+
+    /* PAGE HEADER */
+    .page-header {
+      position: relative;
+      z-index: 1;
+      padding: 72px 24px 64px;
+      max-width: 800px;
+      margin: 0 auto;
+      animation: fadeUp 0.5s ease both;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0,229,160,0.1);
+      border: 1px solid rgba(0,229,160,0.25);
+      color: var(--teal);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 999px;
+      margin-bottom: 24px;
+    }
+    .page-header h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: -1px;
+      margin-bottom: 12px;
+    }
+    .page-header .updated {
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+
+    /* CONTENT */
+    .content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px 100px;
+    }
+
+    .highlight-box {
+      background: rgba(0,229,160,0.06);
+      border: 1px solid rgba(0,229,160,0.2);
+      border-radius: 14px;
+      padding: 24px 28px;
+      margin-bottom: 48px;
+      font-size: 0.975rem;
+      color: #a8b8c8;
+      line-height: 1.7;
+    }
+    .highlight-box strong { color: var(--teal); }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 40px 0;
+    }
+
+    .section-block { margin-bottom: 40px; }
+
+    .section-block h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-block h2 .num {
+      width: 28px; height: 28px;
+      background: rgba(0,229,160,0.12);
+      border: 1px solid rgba(0,229,160,0.25);
+      border-radius: 8px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--teal);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .section-block p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.75;
+      margin-bottom: 14px;
+    }
+    .section-block p:last-child { margin-bottom: 0; }
+
+    .section-block ul {
+      list-style: none;
+      margin: 0 0 14px;
+    }
+    .section-block ul li {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.7;
+      padding: 8px 0 8px 20px;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+    .section-block ul li:last-child { border-bottom: none; }
+    .section-block ul li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6px; height: 6px;
+      background: var(--teal);
+      border-radius: 50%;
+      opacity: 0.7;
+    }
+    .section-block a { color: var(--teal); text-decoration: none; }
+    .section-block a:hover { text-decoration: underline; }
+
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px;
+    }
+    .contact-card p { margin-bottom: 8px; }
+    .contact-card p:last-child { margin-bottom: 0; }
+
+    footer {
+      position: relative;
+      z-index: 1;
+      border-top: 1px solid var(--border);
+      padding: 32px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    footer p { font-size: 0.85rem; color: var(--muted); }
+    .footer-links { display: flex; gap: 28px; }
+    .footer-links a { font-size: 0.85rem; color: var(--muted); text-decoration: none; transition: color .2s; }
+    .footer-links a:hover { color: var(--teal); }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      nav { padding: 16px 20px; }
+      .nav-links { display: none; }
+      footer { padding: 24px 20px; flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+  <nav>
+    <a class="logo" href="index.html">Human<span>Dosed</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+    </ul>
+    <a class="nav-cta" href="https://www.youtube.com/@humandosed" target="_blank" rel="noopener">Watch Now</a>
+  </nav>
+
+  <div class="page-header">
+    <div class="pill">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: April 28, 2025</p>
+  </div>
+
+  <div class="content">
+
+    <div class="highlight-box">
+      <strong>Short version:</strong> HumanDosed does not collect, store, or sell any personal data from visitors to this website. We use third-party platform APIs solely to publish our own content.
+    </div>
+
+    <div class="section-block">
+      <h2><span class="num">1</span> Who We Are</h2>
+      <p>HumanDosed ("we", "us", "our") is a content publishing brand producing daily short-form videos and visual content on longevity, biohacking, and human performance. Our content is distributed on YouTube, Pinterest, Instagram, and TikTok.</p>
+      <p>For questions about this policy: <a href="mailto:contact@humandosed.com">contact@humandosed.com</a></p>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="section-block">
+      <h2><span class="num">2</span> Information We Collect</h2>
+      <p>We do not collect personal information from visitors to this website. We do not use cookies, tracking pixels, analytics scripts, or any other data collection tools on this site.</p>
+      <p>We do not operate user accounts, contact forms, or any feature requiring you to submit personal information.</p>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="section-block">
+      <h2><span class="num">3</span> Third-Party Platforms</h2>
+      <p>We publish content on the following platforms. Each platform governs its own data practices:</p>
+      <ul>
+        <li><strong>YouTube</strong> — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+        <li><strong>Pinterest</strong> — <a href="https://policy.pinterest.com/en/privacy-policy" target="_blank" rel="noopener">Pinterest Privacy Policy</a></li>
+        <li><strong>Instagram</strong> — <a href="https://privacycenter.instagram.com/policy" target="_blank" rel="noopener">Meta Privacy Policy</a></li>
+        <li><strong>TikTok</strong> — <a href="https://www.tiktok.com/legal/page/us/privacy-policy" target="_blank" rel="noopener">TikTok Privacy Policy</a></li>
+      </ul>
+      <p>When you interact with our content on those platforms, your data is governed by their respective policies, not ours.</p>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="section-block">
+      <h2><span class="num">4</span> Pinterest API Use</h2>
+      <p>We use the Pinterest API to publish content (pins and boards) to our official HumanDosed Pinterest account. This integration is used solely for content publishing purposes.</p>
+      <p>Our Pinterest API access is limited exclusively to:</p>
+      <ul>
+        <li>Uploading images to our own HumanDosed Pinterest board</li>
+        <li>Creating pins linked to our published content</li>
+      </ul>
+      <p>We do not access, read, store, or share data belonging to any Pinterest user other than our own account. No Pinterest user data is processed or retained by our systems.</p>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="section-block">
+      <h2><span class="num">5</span> Affiliate Links</h2>
+      <p>Some of our content may contain affiliate links. If you click an affiliate link and make a purchase, we may earn a commission at no additional cost to you. Affiliate partners may include Amazon, Oura, WHOOP, and InsideTracker. Clicking these links takes you to third-party websites governed by their own privacy policies.</p>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="section-block">
+      <h2><span class="num">6</span> Children's Privacy</h2>
+      <p>Our content and this website are not directed at children under the age of 13. We do not knowingly collect any information from children.</p>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="section-block">
+      <h2><span class="num">7</span> Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date. Continued use of our platforms after changes are posted constitutes acceptance of the revised policy.</p>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="section-block">
+      <h2><span class="num">8</span> Contact</h2>
+      <div class="contact-card">
+        <p><strong style="color:#fff">Email:</strong> <a href="mailto:contact@humandosed.com">contact@humandosed.com</a></p>
+        <p><strong style="color:#fff">Brand:</strong> HumanDosed</p>
+        <p><strong style="color:#fff">Website:</strong> <a href="index.html">humandosed.github.io</a></p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2025 HumanDosed. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="mailto:contact@humandosed.com">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
